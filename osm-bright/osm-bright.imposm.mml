@@ -2,9 +2,9 @@
   "Layer": [
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
-        "file": "http://data.openstreetmapdata.com/simplified-land-polygons-complete-3857.zip", 
+        "file": "/usr/local/share/maps/style/osm-bright-master/shp/simplified-land-polygons-complete-3857/simplified_land_polygons.shp", 
         "id": "land-low", 
         "type": "shape",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
@@ -18,7 +18,8 @@
     }, 
     {
       "Datasource": {
-        "file": "http://data.openstreetmapdata.com/land-polygons-split-3857.zip"
+        "file": "/usr/local/share/maps/style/osm-bright-master/shp/land-polygons-split-3857/land_polygons.shp",
+        "type": "shape"
       }, 
       "class": "", 
       "geometry": "polygon", 
@@ -28,7 +29,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "landuse_gen0", 
@@ -48,7 +49,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "landuse_gen1", 
@@ -68,7 +69,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "landuse", 
@@ -88,7 +89,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "waterway", 
@@ -108,7 +109,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "key_field": "", 
@@ -124,7 +125,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "key_field": "", 
@@ -140,7 +141,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "water_gen0", 
@@ -160,7 +161,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "water_gen1", 
@@ -180,7 +181,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "water", 
@@ -200,7 +201,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "landuse_overlays", 
@@ -217,7 +218,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "", 
         "id": "admin", 
@@ -234,7 +235,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "key_field": "", 
@@ -250,7 +251,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "aeroway", 
@@ -270,7 +271,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "key_field": "", 
@@ -286,7 +287,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "key_field": "", 
@@ -302,7 +303,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "", 
         "id": "roads_high", 
@@ -321,7 +322,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "", 
         "key_field": "", 
@@ -337,7 +338,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "key_field": "", 
@@ -354,7 +355,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "key_field": "", 
@@ -370,7 +371,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "bridge", 
@@ -390,7 +391,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "key_field": "", 
@@ -406,7 +407,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "barrier_lines", 
@@ -425,7 +426,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "place", 
@@ -445,7 +446,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "landuse_label", 
@@ -465,7 +466,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "housenumber", 
@@ -485,7 +486,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "housename", 
@@ -505,7 +506,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "motorway_label", 
@@ -525,7 +526,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "mainroad_label", 
@@ -545,7 +546,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "minorroad_label", 
@@ -565,7 +566,7 @@
     }, 
     {
       "Datasource": {
-        "dbname": "osm", 
+        "dbname": "gis", 
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34", 
         "geometry_field": "geometry", 
         "id": "waterway_label", 
