@@ -428,15 +428,9 @@ landusages = Polygons(
 })
 
 # source: http://pydoc.net/Python/imposm.geocoder/0.1.3/imposm.geocoder.geocodemapping/
-#TODO index addr:postcode also?
 point_addresses = Points(
     name = 'point_addresses',
-    with_type_field = False,
     fields = (
-        ('addr:street', String()),
-        ('addr:postcode', String()),
-        ('addr:city', String()),
-        ('addr:country', String()),
         ('addr:housenumber', String()),
         ('addr:housename', String()),
     ),
@@ -452,12 +446,7 @@ point_addresses = Points(
 
 polygon_addresses = Polygons(
     name = 'polygon_addresses',
-    with_type_field = False,
     fields = (
-        ('addr:street', String()),
-        ('addr:postcode', String()),
-        ('addr:city', String()),
-        ('addr:country', String()),
         ('addr:housenumber', String()),
         ('addr:housename', String()),
     ),
@@ -474,29 +463,11 @@ polygon_addresses = Polygons(
 addresses = UnionView(
     name = 'addresses',
     fields = (
-        ('addr:street', String()),
-        ('addr:postcode', String()),
-        ('addr:city', String()),
-        ('addr:country', String()),
         ('addr:housenumber', String()),
         ('addr:housename', String()),
     ),
     mappings = [point_addresses, polygon_addresses],
 )
-
-postcodes = Polygons(
-    name= 'postcode',
-    with_type_field = False,
-    fields = (
-        ('postal_code', String()),
-    ),
-    mapping = {
-        'postal_code': (
-            '__any__',
-        ),
-    }
-)
-
 
 
 amenities = Points(
